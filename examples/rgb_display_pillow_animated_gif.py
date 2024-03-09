@@ -178,7 +178,7 @@ spi = board.SPI()
 # pylint: disable=line-too-long
 # Create the display:
 # disp = st7789.ST7789(spi, rotation=90,                            # 2.0" ST7789
-# disp = st7789.ST7789(spi, height=240, y_offset=80, rotation=180,  # 1.3", 1.54" ST7789
+disp = st7789.ST7789(spi, height=240, y_offset=80, rotation=180,  # 1.3", 1.54" ST7789
 # disp = st7789.ST7789(spi, rotation=90, width=135, height=240, x_offset=53, y_offset=40, # 1.14" ST7789
 # disp = st7789.ST7789(spi, rotation=90, width=172, height=320, x_offset=34, # 1.47" ST7789
 # disp = st7789.ST7789(spi, rotation=270, width=170, height=320, x_offset=35, # 1.9" ST7789
@@ -191,9 +191,9 @@ spi = board.SPI()
 # disp = ssd1351.SSD1351(spi, rotation=180,                         # 1.5" SSD1351
 # disp = ssd1351.SSD1351(spi, height=96, y_offset=32, rotation=180, # 1.27" SSD1351
 # disp = ssd1331.SSD1331(spi, rotation=180,                         # 0.96" SSD1331
-disp = ili9341.ILI9341(
-    spi,
-    rotation=90,  # 2.2", 2.4", 2.8", 3.2" ILI9341
+#disp = ili9341.ILI9341(
+#    spi,
+#    rotation=90,  # 2.2", 2.4", 2.8", 3.2" ILI9341
     cs=cs_pin,
     dc=dc_pin,
     rst=reset_pin,
