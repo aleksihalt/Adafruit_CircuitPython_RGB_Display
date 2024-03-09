@@ -25,12 +25,8 @@ import digitalio
 import board
 from PIL import Image, ImageOps
 import numpy  # pylint: disable=unused-import
-from adafruit_rgb_display import ili9341
+
 from adafruit_rgb_display import st7789  # pylint: disable=unused-import
-from adafruit_rgb_display import hx8357  # pylint: disable=unused-import
-from adafruit_rgb_display import st7735  # pylint: disable=unused-import
-from adafruit_rgb_display import ssd1351  # pylint: disable=unused-import
-from adafruit_rgb_display import ssd1331  # pylint: disable=unused-import
 
 # Button pins for EYESPI Pi Beret
 BUTTON_NEXT = board.D5
